@@ -16,6 +16,7 @@ app.use(bodyParser.text({type: "text.html"}));
 
 //have everything go through middleware
 app.use(router);
+require("./app/routing/htmlRoutes.js")(app);
 //tell us what port app is listening at
 app.listen(PORT,function(){
     console.log("Listening on port:" + PORT);
