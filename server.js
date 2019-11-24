@@ -1,7 +1,7 @@
 let express = require("express");
 let bodyParser = require("body-parser");
 //set up port for listening on designated port or 3000
-let PORT = process.env.PORT||3000;
+let PORT = process.env.PORT||8080;
 // express app
 let app = express();
 //express router
