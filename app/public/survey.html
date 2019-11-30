@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.min.js"></script> -->
+
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/css/bootstrap-modal.css"> -->
+
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<div class="container">
+
+    <h2> Please select the level of agreement with the following ten items so we will know more about you:</h2>
+    <hr>
+    
+    <form>
+        <h3><strong>You are:</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4>Picture (Required)</h4>
+        <input type="text" id="pic" class="form-control" required>
+
+        <hr>
+        <h3><strong>One</strong></h3>
+        <h4>I am adventurous.</h4>
+        <select class="options" id="ques1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Two</strong></h3>
+        <h4>I would prefer and evening in than going out.</h4>
+        <select class="options" id="ques2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Three</strong></h3>
+        <h4> Loyalty is in my top 3 values.</h4>
+        <select class="options" id="ques3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+
+        </select>
+        <h3><strong>Four</strong></h3>
+        <h4>When I see something immoral I get involved.</h4>
+        <select class="options" id="ques4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Five</strong></h3>
+        <h4> I like to engage with strangers.</h4>
+        <select class="options" id="ques5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Six</strong></h3>
+        <h4>Everyone has certain rights now matter who they are.</h4>
+        <select class="options" id="ques6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Seven</strong></h3>
+        <h4>Education is fundemental to success.</h4>
+        <select class="options" id="ques7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Eight</strong></h3>
+        <h4>Logic is more important than emotion.</h4>
+        <select class="options" id="ques8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Nine</strong></h3>
+        <h4>A good relationship with family is they key to happiness.</h4>
+        <select class="options" id="ques9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Ten</strong></h3>
+        <h4>Love is above all.</h4>
+        <select class="options" id="ques10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+<footer>
+
+    <div id="modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="friend-name"> </div>
+                    <img class="friend-picture" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+//  <!-- will request information from (new) the friends route Need the form element to wrap around all requests -->
+    document.querySelector('.btn').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const data = {
+            name: document.getElementById('name').value.trim(),
+            pic: document.getElementById('pic').value.trim(),
+            ques1: document.getElementById('ques1').value.trim(),
+            ques2: document.getElementById('ques2').value.trim(),
+            ques3: document.getElementById('ques3').value.trim(),
+            ques4: document.getElementById('ques4').value.trim(),
+            ques5: document.getElementById('ques5').value.trim(),
+            ques6: document.getElementById('ques6').value.trim(),
+            ques7: document.getElementById('ques7').value.trim(),
+            ques8: document.getElementById('ques8').value.trim(),
+            ques9: document.getElementById('ques9').value.trim(),
+            ques10: document.getElementById('ques10').value.trim()
+        }
+
+
+        fetch('/api/friends', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(match => {
+            console.log(match);
+            $('.modal-title').html('Friend matched!');
+            $('.friend-name').html(match.name);
+            $('.friend-picture').attr('src', match.photo);
+            $('#modal').modal('show');
+
+
+        })
+    })
+</script>
+</body>
+
+</html>
