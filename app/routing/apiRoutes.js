@@ -21,25 +21,29 @@ module.exports = function (app) {
             +req.body.ques9,
             +req.body.ques10,
         ];
-        let closetMatch = 99;
-        let matchFriend = 0;
-        for (let i = 0; i < friends.length; i++) {
-            let currentMatch = getClosetMatch(userScore, friends[i].scores);
-            if (currentMatch < closetMatch) {
 
+        let closestMatch = 99;
+        let matchFriend=0;
+        for (let i = 0; i < friends.length; i++) {
+            let currentMatch = getClosestMatch(userScore, friends[i].scores);
+            if (currentMatch < closestMatch) {
+                closestMatch = currentMatch
                 matchFriend = i;
             }
         }
         const match = friends[matchFriend];
         res.json(match);
+
     });
 }
 
 // console.log(friends[matchFriend]);
-function getClosetMatch(userScore, friendsScore) {
+function getClosestMatch(userScore, friendsScore) {
     let totaled = 0;
     for (let i = 0; i < userScore.length; i++) {
-        totaled += (userScore[i] < 0 ? userScore[i] * -1 : userScore[i]) < 0 ? friendsScore[i] * -1 : friendsScore[i];
-    }
-    return Math.abs(totaled)
+        totaled += Math.abs(userScore[i]) - Math.abs(friendsScore[i]);
+    };
+    console.log ( Math.abs(totaled));
+    return Math.abs(totaled);
+
 }
