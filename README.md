@@ -4,7 +4,7 @@
 This application solves the problem of finding a friend for those lonely individuals.
 
 # **__What Is The App Doing And Why?__** 
-The application gets and posts survey information so it can align the user with a friend that best matches the responses they have given to the survey quesitons.
+The application gets and posts survey information so it can align the user with a friend that best matches the responses they have given to the survey questions.
 
 # **__How Do You Run The App?__** 
 You run the app by doing the following:
